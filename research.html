@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research — Tianyou Lyu</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
+  <style>
+    :root { --brand:#2a4b8d; --soft:#f6f7fb; }
+    body{ font-family:"Open Sans",system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; }
+    .navbar{ background:var(--soft); border-bottom:1px solid #e6e6e6; }
+    .right-panel{ padding-right:1rem; }
+    .sticky{ position:sticky; top:1.5rem; }
+    @media (min-width:769px){ .column.is-2_5{ flex:none; width:20%; } }
+    footer.container{ text-align:center; margin-top:2rem; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">Home</a>
+        <a class="navbar-item is-active" href="research.html">Research</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-2_5">
+          <div class="sticky">
+            <div class="content">
+              <h2 style="margin-top:1em">Research</h2>
+              <p><a href="mailto:luty200510@gmail.com">luty200510@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column right-panel">
+          <div class="content">
+            <h2>(Ongoing) Transcriptomic Research Project — Independent Study</h2>
+            <p><b>[Expected completion: November 2025]</b> • <b>Project Lead</b> (Sep 2025 – Present)</p>
+
+            <p>
+              This project examines immune transcriptomic differences in Beta-variant COVID-19 patients with and without prior
+              Pfizer-BioNTech vaccination using RNA-seq data from GSE189039 (NCBI GEO). I focus on building a reproducible
+              pipeline that begins with quality control and alignment, continues through quantification and normalization, and
+              culminates in differential expression and pathway enrichment analyses. The work emphasizes documentation and
+              transparency so that figures and statistics are fully traceable from the raw data to final results. Beyond the
+              technical goals, the motivation is to clarify how vaccination shapes early antiviral signaling and longer-term
+              immune programs following infection. By comparing vaccinated and unvaccinated cohorts across multiple
+              post-infection timepoints, I evaluate whether vaccine-primed responses—such as interferon signaling and
+              JAK-STAT pathway activation—are consistently elevated and whether they correlate with protective mechanisms
+              discussed in recent literature. The broader aim is to practice careful scientific reasoning: making specific,
+              testable claims, reporting limitations, and outlining next steps that could strengthen conclusions.
+            </p>
+
+            <article class="columns" style="margin-top:.5rem;">
+              <div class="column is-4">
+                <figure class="image">
+                  <img src="images/publications/tracy2.png" alt="RNA-seq workflow diagram">
+                </figure>
+              </div>
+              <div class="column">
+                <h3>What I did</h3>
+                <ul>
+                  <li>Implemented analysis in <b>Python</b> (pandas, matplotlib) and <b>R</b> (DESeq2, GSEA).</li>
+                  <li>Ran differential gene expression and pathway enrichment with clear QC checkpoints.</li>
+                  <li>Identified up-regulated interferon and JAK-STAT signaling as vaccine-primed responses.</li>
+                  <li>Created reproducible notebooks and exportable figures for communication.</li>
+                </ul>
+              </div>
+            </article>
+
+            <p>
+              Next steps include validating results on additional public datasets, refining batch-effect handling, and building a
+              small web gallery to host interactive figures for broader sharing.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="container">
+        <br><hr>
+        © 2025 Tianyou Lyu • Last update: October. 2025
+      </footer>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tianyou Lyu - Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
+  <script defer src="font-awesome/js/brands.min.js"></script>
+  <script defer src="font-awesome/js/regular.min.js"></script>
+  <script defer src="font-awesome/js/fontawesome.min.js"></script>
+  <style>
+    :root { --brand:#2a4b8d; --ink:#363636; --muted:#6a6a6a; --soft:#f6f7fb; }
+    body{ font-family:"Open Sans",system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--ink); }
+    .navbar { background: var(--soft); border-bottom: 1px solid #e6e6e6; }
+    .navbar a.navbar-item.is-active { font-weight:700; color: var(--brand); }
+    .right-panel{ padding-right:1rem; }
+    .sticky{ position:sticky; top:1.5rem; }
+    @media (min-width:769px){ .column.is-2_5{ flex:none; width:20%; } }
+    .social a{ color:#4a4a4a; text-decoration:none; } .social a+a{ margin-left:15px; }
+    footer.container{ text-align:center; margin-top:2rem; }
+  </style>
+</head>
+<body>
+  <!-- Simple top navigation -->
+  <nav class="navbar" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item is-active" href="index.html">Home</a>
+        <a class="navbar-item" href="research.html">Research Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <!-- Sidebar -->
+        <div class="column is-2_5">
+          <div class="sticky">
+            <div class="content">
+              <h2 style="margin-top:1em">Tianyou Lyu</h2>
+              <p>
+                <b>Sophomore</b><br/>
+                @ Northeastern University<br/>
+                West Newton, MA<br/>
+                <a href="mailto:luty200510@gmail.com">luty200510@gmail.com</a> | lyu.ti@northeastern.edu
+              </p>
+            </div>
+            <div class="social">
+              <a href="mailto:luty200510@gmail.com" aria-label="Email"><span class="fa-regular fa-envelope fa-2x"></span></a>
+              <a href="https://github.com/Eeeeqyq/" target="_blank" aria-label="GitHub"><span class="fab fa-github fa-2x"></span></a>
+              <a href="https://www.linkedin.com/in/tianyou-eric-lyu-b99817335/" target="_blank" aria-label="LinkedIn"><span class="fab fa-linkedin fa-2x"></span></a>
+            </div>
+            <nav class="menu sticky is-hidden-mobile">
+              <p class="menu-label"><b>Quick Links</b></p>
+              <ul class="menu-list">
+                <li><a href="#Intro" class="is-active">About Me</a></li>
+                <li><a href="#Contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Main -->
+        <div class="column right-panel">
+          <div class="content">
+            <h1 id="Intro">Welcome to My Website</h1>
+            <p>
+              I’m a second-year data science student at Northeastern University with interests in applied machine learning,
+              health informatics, and scientific computing. I enjoy turning raw data into clear stories and practical tools.
+              In coursework and projects, I’ve worked across Python, R, and web technologies to build small but useful things:
+              from interactive visualizations to reproducible analytics pipelines. I’m especially drawn to projects where I can
+              explore the full stack of the data workflow—collecting or sourcing datasets, cleaning and organizing them,
+              designing visual encodings, and communicating insights in a way that is accessible to non-technical audiences.
+              <br><br>
+              Outside class, I’m developing my research skills through an independent transcriptomics project that analyzes
+              immune responses to COVID-19. This work has taught me how to read papers critically, compare methods, and keep
+              careful records so results are reproducible. It’s also made me appreciate the collaboration between domain
+              experts and data scientists. As I grow, I aim to contribute to teams that value clarity, integrity, and learning.
+              I’m currently looking for opportunities—co-ops, internships, or collaborations—where I can apply my skills,
+              learn from mentors, and deliver measurable value.
+            </p>
+
+            <figure class="image" style="max-width:520px;">
+              <img src="images/publications/newtoolusesr.gif" alt="Sample visualization">
+            </figure>
+
+            <h2 id="Contact">Contact</h2>
+            <p>
+              The fastest way to reach me is email:
+              <a href="mailto:luty200510@gmail.com">luty200510@gmail.com</a>. You can also find me on
+              <a href="https://github.com/Eeeeqyq/" target="_blank">GitHub</a> and
+              <a href="https://www.linkedin.com/in/tianyou-eric-lyu-b99817335/" target="_blank">LinkedIn</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="container">
+        <br><hr>
+        © 2025 Tianyou Lyu<br/>Last update: October. 2025
+      </footer>
+    </div>
+  </section>
+
+  <script>
+    // Tiny scroll spy for sidebar links on this page
+    (function () {
+      const links = Array.from(document.querySelectorAll('.menu-list a'));
+      const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+      function onScroll(){
+        const pos = window.scrollY + 60;
+        let active = links[0];
+        for (let i=0;i<sections.length;i++){ if (sections[i].offsetTop <= pos) active = links[i]; }
+        links.forEach(l=>l.classList.remove('is-active')); if (active) active.classList.add('is-active');
+      }
+      document.addEventListener('scroll', onScroll, {passive:true});
+      window.addEventListener('load', onScroll);
+    })();
+  </script>
+</body>
+</html>
