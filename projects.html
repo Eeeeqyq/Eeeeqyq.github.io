@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tianyou (Eric) Lyu — Portfolio</title>
+  <title>Projects — Tianyou (Eric) Lyu</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" />
   <script defer src="font-awesome/js/brands.min.js"></script>
@@ -28,47 +28,25 @@
       </div>
       <div id="navMenu" class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item is-current" href="index.html">Home</a>
+          <a class="navbar-item" href="index.html">Home</a>
           <a class="navbar-item" href="experience.html">Experience</a>
-          <a class="navbar-item" href="projects.html">Projects</a>
+          <a class="navbar-item is-current" href="projects.html">Projects</a>
           <a class="navbar-item" href="contact.html">Contact</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- ===== Hero ===== -->
-  <div class="hero-section">
-    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
-    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
-    <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
-    <div class="container hero-inner">
-      <h1 class="hero-title">Tianyou (Eric) Lyu</h1>
-      <h2 class="hero-subtitle">Data Science &amp; ML · Northeastern University</h2>
-      <p class="hero-tagline">
-        Building end-to-end ML systems and data-driven tools.
-        Open to co-op / internship opportunities <strong style="color:#fff; font-weight:700;">May – December 2026</strong>.
-      </p>
-      <div class="hero-btns">
-        <a href="mailto:lyu.ti@northeastern.edu" class="button">
-          <span class="icon"><i class="far fa-envelope"></i></span>
-          <span>Email Me</span>
-        </a>
-        <a href="https://github.com/Eeeeqyq/" target="_blank" rel="noopener" class="button">
-          <span class="icon"><i class="fab fa-github"></i></span>
-          <span>GitHub</span>
-        </a>
-        <a href="https://www.linkedin.com/in/tianyou-eric-lyu-b99817335/" target="_blank" rel="noopener" class="button">
-          <span class="icon"><i class="fab fa-linkedin"></i></span>
-          <span>LinkedIn</span>
-        </a>
-      </div>
+  <!-- ===== Page Header ===== -->
+  <div class="page-header">
+    <div class="container" style="position:relative;">
+      <p class="page-sub">Tianyou (Eric) Lyu</p>
+      <h1 class="page-title">Projects</h1>
     </div>
   </div>
-
-  <div class="wave-divider" aria-hidden="true">
-    <svg viewBox="0 0 1200 52" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,30 C200,60 400,0 600,26 C800,52 1000,8 1200,30 L1200,52 L0,52 Z"/>
+  <div class="page-wave" aria-hidden="true">
+    <svg viewBox="0 0 1200 36" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,18 C300,38 900,0 1200,18 L1200,36 L0,36 Z"/>
     </svg>
   </div>
 
@@ -96,18 +74,17 @@
             <nav class="menu page-nav">
               <p class="menu-label">Pages</p>
               <ul class="menu-list">
-                <li><a href="index.html" class="is-current">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="projects.html" class="is-current">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </nav>
             <nav class="menu section-nav" style="margin-top:.75rem;">
-              <p class="menu-label">On this page</p>
+              <p class="menu-label">Projects</p>
               <ul class="menu-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#highlights">Highlights</a></li>
-                <li><a href="#featured">Featured Work</a></li>
+                <li><a href="#debt-ml">Student Debt ML</a></li>
+                <li><a href="#music-agent">Music Agent</a></li>
               </ul>
             </nav>
           </aside>
@@ -116,101 +93,69 @@
         <!-- Main content -->
         <div class="column">
 
-          <!-- About -->
-          <section id="about" class="content-section">
-            <h2 class="section-title">About Me</h2>
-            <p class="body-text">
-              I'm a sophomore studying Data Science at Northeastern University (Minor in Mechanical Engineering, 3.2 GPA).
-              My work sits at the intersection of applied ML, data engineering, and software development — I enjoy
-              taking a problem from raw data all the way to a working, interpretable system.
-            </p>
-            <p class="body-text">
-              Recent projects include an end-to-end ML pipeline predicting student debt payoff timelines across 6,300+
-              U.S. institutions, and a goal-conditioned ambient music recommendation agent that fuses wearable signals
-              with multi-source audio features. Before university, I spent nearly three years as an Operations Associate
-              at TYB, automating trading reports with Python and shipping the company's web presence.
-            </p>
-            <p class="body-text">
-              I'm actively seeking a <strong>co-op or internship from May to December 2026</strong>. Outside of work
-              you'll find me in the gym, tinkering with drones, following motorsport, or deep in a video game.
-            </p>
-          </section>
+          <section id="projects" class="content-section">
+            <h2 class="section-title">Selected Projects</h2>
 
-          <hr>
-
-          <!-- Highlights -->
-          <section id="highlights" class="content-section">
-            <h2 class="section-title">Highlights</h2>
-            <div class="stat-grid">
-              <div class="stat-card reveal">
-                <p class="stat-num">6,300<sup>+</sup></p>
-                <p class="stat-label">Institutions in ML pipeline</p>
-              </div>
-              <div class="stat-card reveal">
-                <p class="stat-num">40<sup>%</sup></p>
-                <p class="stat-label">Reduction in manual reporting time</p>
-              </div>
-              <div class="stat-card reveal">
-                <p class="stat-num">3.2</p>
-                <p class="stat-label">GPA at Northeastern University</p>
-              </div>
-            </div>
-          </section>
-
-          <hr>
-
-          <!-- Featured Work -->
-          <section id="featured" class="content-section">
-            <h2 class="section-title">Featured Work</h2>
-
-            <div class="feat-card reveal">
-              <div class="feat-card-header">
-                <h3 class="feat-card-title">ML for Student Debt Outcomes</h3>
+            <div id="debt-ml" class="project-card reveal">
+              <div class="project-header">
+                <h3 class="project-title">ML for Student Debt Outcomes</h3>
                 <a href="https://github.com/Eeeeqyq/ML_DS4400_Project" target="_blank" rel="noopener"
                    class="button is-small project-btn">
                   <span class="icon"><i class="fab fa-github"></i></span>
                   <span>GitHub</span>
                 </a>
               </div>
-              <p class="feat-card-meta">Group Project · Northeastern University · 2026</p>
-              <p class="feat-card-desc">
-                End-to-end ML pipeline predicting institution-level years to student debt payoff across 6,300+ U.S.
-                institutions. Best model achieved <strong>MAE ≈ 3.95 years</strong> and <strong>R² ≈ 0.63</strong>.
+              <p class="project-meta">Group Project &nbsp;·&nbsp; Northeastern University &nbsp;·&nbsp; 2026</p>
+              <p>
+                End-to-end ML pipeline predicting institution-level years to student debt payoff using U.S. Department
+                of Education College Scorecard data (<strong>6,300+ institutions</strong>). Engineered a custom target
+                variable incorporating tax assumptions, BLS-calibrated living costs, loan amortization, and a 25-year
+                IDR cap; prevented data leakage by excluding target inputs from features.
               </p>
-              <div class="tags" style="margin-top:.6rem;">
+              <ul>
+                <li>Trained and tuned four models: Ridge, Decision Tree, Random Forest, PyTorch Neural Network</li>
+                <li>Best performance: <strong>MAE ≈ 3.95 years</strong> &nbsp;|&nbsp; <strong>R² ≈ 0.63</strong></li>
+                <li>Produced 20+ EDA and evaluation visualizations; deployed live interactive demo via Vercel</li>
+              </ul>
+              <div class="tags" style="margin-top:.75rem;">
                 <span class="tag is-info is-light">Python</span>
                 <span class="tag is-info is-light">PyTorch</span>
                 <span class="tag is-info is-light">scikit-learn</span>
+                <span class="tag is-info is-light">pandas</span>
+                <span class="tag is-info is-light">Matplotlib</span>
                 <span class="tag is-info is-light">Vercel</span>
               </div>
             </div>
 
-            <div class="feat-card reveal">
-              <div class="feat-card-header">
-                <h3 class="feat-card-title">Ambient Music Recommendation Agent</h3>
+            <div id="music-agent" class="project-card reveal">
+              <div class="project-header">
+                <h3 class="project-title">Ambient Music Recommendation Agent</h3>
                 <a href="https://github.com/Eeeeqyq/CS4100-Project-" target="_blank" rel="noopener"
                    class="button is-small project-btn">
                   <span class="icon"><i class="fab fa-github"></i></span>
                   <span>GitHub</span>
                 </a>
               </div>
-              <p class="feat-card-meta">Group Project · Northeastern University · 2026</p>
-              <p class="feat-card-desc">
-                Goal-conditioned music recommendation system fusing wearable biosignals and multi-source audio features.
-                Achieved <strong>Recall@20 = 0.746</strong> and <strong>Rerank Hit@10 = 0.717</strong>.
+              <p class="project-meta">Group Project &nbsp;·&nbsp; Northeastern University &nbsp;·&nbsp; 2026</p>
+              <p>
+                Goal-conditioned music recommendation system combining user context, wearable biosignals, and song
+                representations across four mood states — <em>focus, wind-down, uplift, movement</em>.
               </p>
-              <div class="tags" style="margin-top:.6rem;">
+              <ul>
+                <li>Anchor-first retrieval and reranking pipeline with multitask prediction heads for intervention benefit and acceptance likelihood</li>
+                <li>Integrated multisource data (SiTunes, PMEmo, Spotify) with deterministic preprocessing and artifact-based validation for reproducible experiments</li>
+                <li>Held-out performance: <strong>Recall@20 = 0.746</strong> &nbsp;|&nbsp; <strong>Recall@50 = 0.881</strong> &nbsp;|&nbsp; <strong>Rerank Hit@10 = 0.717</strong></li>
+              </ul>
+              <div class="tags" style="margin-top:.75rem;">
                 <span class="tag is-success is-light">Python</span>
                 <span class="tag is-success is-light">Recommendation Systems</span>
+                <span class="tag is-success is-light">Wearable Signals</span>
+                <span class="tag is-success is-light">Multi-task Learning</span>
                 <span class="tag is-success is-light">Spotify API</span>
               </div>
             </div>
 
-            <div class="section-footer">
-              <a href="projects.html" class="view-all-link">View all projects &rarr;</a>
-            </div>
           </section>
-
         </div>
       </div>
 
@@ -225,7 +170,6 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      // Hamburger
       var burger = document.querySelector('.navbar-burger');
       var menu   = document.getElementById('navMenu');
       burger.addEventListener('click', function () {
@@ -239,15 +183,12 @@
         });
       });
 
-      // Scroll progress
       var progressBar = document.getElementById('scrollProgress');
       var backToTop   = document.getElementById('backToTop');
-
       backToTop.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
 
-      // Scroll-spy (section nav only)
       var links    = Array.from(document.querySelectorAll('.section-nav .menu-list a'));
       var ids      = links.map(function (a) { return a.getAttribute('href'); });
       var sections = ids.map(function (id) { return document.querySelector(id); }).filter(Boolean);
@@ -256,9 +197,7 @@
         var pct = (document.documentElement.scrollHeight - window.innerHeight) > 0
           ? (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100 : 0;
         progressBar.style.width = pct + '%';
-
-        backToTop.classList.toggle('visible', window.scrollY > 400);
-
+        backToTop.classList.toggle('visible', window.scrollY > 300);
         var pos = window.scrollY + 110;
         var active = links[0];
         for (var i = 0; i < sections.length; i++) {
@@ -271,7 +210,6 @@
       document.addEventListener('scroll', onScroll, { passive: true });
       window.addEventListener('load', onScroll);
 
-      // Reveal
       var revealEls = document.querySelectorAll('.reveal');
       if ('IntersectionObserver' in window) {
         var obs = new IntersectionObserver(function (entries) {

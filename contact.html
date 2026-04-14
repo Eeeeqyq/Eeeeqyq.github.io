@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Tianyou (Eric) Lyu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" />
+  <script defer src="font-awesome/js/brands.min.js"></script>
+  <script defer src="font-awesome/js/regular.min.js"></script>
+  <script defer src="font-awesome/js/fontawesome.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-item brand-name">Tianyou (Eric) Lyu</a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="index.html">Home</a>
+          <a class="navbar-item" href="experience.html">Experience</a>
+          <a class="navbar-item" href="projects.html">Projects</a>
+          <a class="navbar-item is-current" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Page Header ===== -->
+  <div class="page-header">
+    <div class="container" style="position:relative;">
+      <p class="page-sub">Tianyou (Eric) Lyu</p>
+      <h1 class="page-title">Skills &amp; Contact</h1>
+    </div>
+  </div>
+  <div class="page-wave" aria-hidden="true">
+    <svg viewBox="0 0 1200 36" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,18 C300,38 900,0 1200,18 L1200,36 L0,36 Z"/>
+    </svg>
+  </div>
+
+  <!-- ===== Main ===== -->
+  <div class="main-wrapper">
+    <div class="container">
+      <div class="columns">
+
+        <!-- Sidebar -->
+        <div class="column is-3 is-hidden-mobile">
+          <aside class="sidebar">
+            <div class="mb-4">
+              <p class="sidebar-name">Tianyou (Eric) Lyu</p>
+              <p class="sidebar-title">BS Data Science</p>
+              <p class="sidebar-sub">Minor in Mechanical Engineering</p>
+              <p class="sidebar-sub">Northeastern University</p>
+              <p class="sidebar-sub">West Newton, MA</p>
+              <span class="sidebar-avail">Available: May – Dec 2026</span>
+            </div>
+            <div class="social-icons">
+              <a href="mailto:lyu.ti@northeastern.edu" aria-label="Email"><i class="far fa-envelope fa-lg"></i></a>
+              <a href="https://github.com/Eeeeqyq/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github fa-lg"></i></a>
+              <a href="https://www.linkedin.com/in/tianyou-eric-lyu-b99817335/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+            </div>
+            <nav class="menu page-nav">
+              <p class="menu-label">Pages</p>
+              <ul class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="is-current">Contact</a></li>
+              </ul>
+            </nav>
+            <nav class="menu section-nav" style="margin-top:.75rem;">
+              <p class="menu-label">On this page</p>
+              <ul class="menu-list">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </aside>
+        </div>
+
+        <!-- Main content -->
+        <div class="column">
+
+          <!-- Skills -->
+          <section id="skills" class="content-section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+              <div class="skill-group reveal">
+                <p class="skill-group-title">ML &amp; Data Science</p>
+                <div class="tags">
+                  <span class="tag is-dark">PyTorch</span>
+                  <span class="tag is-dark">scikit-learn</span>
+                  <span class="tag is-dark">pandas</span>
+                  <span class="tag is-dark">Matplotlib</span>
+                  <span class="tag is-dark">Altair</span>
+                </div>
+              </div>
+              <div class="skill-group reveal">
+                <p class="skill-group-title">Programming &amp; Tools</p>
+                <div class="tags">
+                  <span class="tag is-dark">Python</span>
+                  <span class="tag is-dark">SQL</span>
+                  <span class="tag is-dark">HTML</span>
+                  <span class="tag is-dark">Tableau</span>
+                  <span class="tag is-dark">Excel / Word</span>
+                </div>
+              </div>
+              <div class="skill-group reveal">
+                <p class="skill-group-title">Languages</p>
+                <div class="tags">
+                  <span class="tag is-info is-light">English</span>
+                  <span class="tag is-info is-light">Chinese (Mandarin)</span>
+                </div>
+                <p class="skill-group-title" style="margin-top:.9rem;">Interests</p>
+                <div class="tags">
+                  <span class="tag">Motorsport</span>
+                  <span class="tag">Automobiles</span>
+                  <span class="tag">Drones</span>
+                  <span class="tag">Gym</span>
+                  <span class="tag">Video Games</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <hr>
+
+          <!-- Contact -->
+          <section id="contact" class="content-section">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="body-text">
+              I'm actively looking for co-op and internship opportunities from <strong>May to December 2026</strong>.
+              Feel free to reach out — email is the fastest way to get hold of me.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:lyu.ti@northeastern.edu" class="contact-item reveal">
+                <span class="icon"><i class="far fa-envelope"></i></span>
+                lyu.ti@northeastern.edu
+              </a>
+              <a href="https://www.linkedin.com/in/tianyou-eric-lyu-b99817335/" target="_blank" rel="noopener" class="contact-item reveal">
+                <span class="icon"><i class="fab fa-linkedin"></i></span>
+                linkedin.com/in/tianyou-eric-lyu-b99817335
+              </a>
+              <a href="https://github.com/Eeeeqyq/" target="_blank" rel="noopener" class="contact-item reveal">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                github.com/Eeeeqyq
+              </a>
+            </div>
+          </section>
+
+        </div>
+      </div>
+
+      <footer>
+        <hr>
+        <p>© 2026 Tianyou (Eric) Lyu &nbsp;·&nbsp; Last updated April 2026</p>
+      </footer>
+    </div>
+  </div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var burger = document.querySelector('.navbar-burger');
+      var menu   = document.getElementById('navMenu');
+      burger.addEventListener('click', function () {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+      menu.querySelectorAll('.navbar-item').forEach(function (item) {
+        item.addEventListener('click', function () {
+          burger.classList.remove('is-active');
+          menu.classList.remove('is-active');
+        });
+      });
+
+      var progressBar = document.getElementById('scrollProgress');
+      var backToTop   = document.getElementById('backToTop');
+      backToTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      var links    = Array.from(document.querySelectorAll('.section-nav .menu-list a'));
+      var ids      = links.map(function (a) { return a.getAttribute('href'); });
+      var sections = ids.map(function (id) { return document.querySelector(id); }).filter(Boolean);
+
+      function onScroll() {
+        var pct = (document.documentElement.scrollHeight - window.innerHeight) > 0
+          ? (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100 : 0;
+        progressBar.style.width = pct + '%';
+        backToTop.classList.toggle('visible', window.scrollY > 300);
+        var pos = window.scrollY + 110;
+        var active = links[0];
+        for (var i = 0; i < sections.length; i++) {
+          if (sections[i].offsetTop <= pos) active = links[i];
+        }
+        links.forEach(function (l) { l.classList.remove('is-active'); });
+        if (active) active.classList.add('is-active');
+      }
+
+      document.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('load', onScroll);
+
+      var revealEls = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var obs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+          });
+        }, { threshold: 0.1 });
+        revealEls.forEach(function (el) { obs.observe(el); });
+      } else {
+        revealEls.forEach(function (el) { el.classList.add('visible'); });
+      }
+    });
+  </script>
+
+</body>
+</html>
