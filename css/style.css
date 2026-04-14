@@ -3,9 +3,9 @@
    ===================================================== */
 
 :root {
-  --brand:       #2a4b8d;
-  --brand-light: #3960a8;
-  --brand-dark:  #1a3366;
+  --brand:       #004225;
+  --brand-light: #006b3c;
+  --brand-dark:  #002d1a;
   --accent:      #ee4c2c;
   --ink:         #1a202c;
   --muted:       #64748b;
@@ -15,8 +15,8 @@
   --success:     #166534;
   --success-bg:  #dcfce7;
   --shadow-sm:   0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
-  --shadow-md:   0 6px 20px rgba(42,75,141,.13);
-  --shadow-lg:   0 10px 36px rgba(42,75,141,.2);
+  --shadow-md:   0 6px 20px rgba(0,66,37,.13);
+  --shadow-lg:   0 10px 36px rgba(0,66,37,.2);
   --radius:      10px;
   --ease:        .25s ease;
 }
@@ -80,7 +80,7 @@ body {
 
 /* ========== Hero ========== */
 .hero-section {
-  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 55%, #0f1f44 100%);
+  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 55%, #001208 100%);
   color: #fff;
   padding: 5rem 1.5rem 4rem;
   position: relative;
@@ -159,7 +159,7 @@ body {
 
 /* Wave divider */
 .wave-divider {
-  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 55%, #0f1f44 100%);
+  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 55%, #001208 100%);
   line-height: 0;
   margin-top: -2px;
 }
@@ -614,6 +614,18 @@ footer {
   transition: gap var(--ease), color var(--ease);
 }
 .view-all-link:hover { gap: .65rem; color: var(--accent); }
+
+/* ========== GIF Showcase ========== */
+.gif-showcase {
+  text-align: center;
+  padding: .25rem 0 1.5rem;
+}
+.gif-showcase img {
+  max-width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
 
 /* ========== Responsive ========== */
 @media (max-width: 768px) {
